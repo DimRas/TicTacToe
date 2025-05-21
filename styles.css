@@ -53,19 +53,19 @@ body {
 }
 
 .status {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .current-player {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 10px;
   animation: pulse 1.5s ease-in-out infinite;
 }
@@ -391,19 +391,19 @@ body::before {
 }
 
 .win-message {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
   color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .win-message .winner {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 10px;
   animation: winPulse 1s ease-in-out infinite;
 }
@@ -422,6 +422,18 @@ body::before {
     0 0 30px var(--secondary-color);
   background: rgba(255, 0, 255, 0.1);
   border: 2px solid var(--secondary-color);
+}
+
+.win-message .winner.draw {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  animation: winPulse 1s ease-in-out infinite;
+  color: var(--text-color);
+  text-shadow: 0 0 8px var(--text-color), 0 0 15px var(--text-color);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--text-color);
 }
 
 @keyframes winPulse {
