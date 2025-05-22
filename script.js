@@ -184,11 +184,9 @@ class TicTacToe {
 
     // Reset status display to turn indicator
     this.statusDisplay.innerHTML = `
-      <div class="status">
-        <span>Player</span>
-        <span class="current-player x" id="currentPlayer">X</span>
-        <span>'s turn</span>
-      </div>
+      <span>Player</span>
+      <span class="current-player x" id="currentPlayer">X</span>
+      <span>'s turn</span>
     `;
     this.currentPlayerDisplay = document.getElementById("currentPlayer");
 
